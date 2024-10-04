@@ -29,6 +29,25 @@ function modificarContenido() {
                     <p id="contenido">Este es un exemple de contingut HTML.</p>
                 </section>`;
             break;
+        
+        case 'modificarAtributos':
+            content = `
+                <section id="modificarAtributos">
+                    <h2>Funció per a modificar els atributs HTML mitjançant JavaScript</h2>
+                    <pre><code>
+function modificarAtributo() {
+    const imagen = document.getElementById('imagenEjemplo');
+    imagen.src = 'nueva-imagen.png';
+    imagen.alt = 'Nova imatge d'exemple';
+}
+                    </code></pre>
+                    <p>
+                        Exemple:
+                        <button onclick="modificarAtributo()">Modificar Atribut</button>
+                    </p>
+                    <img id="imatgeExemple" src="imagen.png" alt="Imatge d'exemple">
+                </section>`;
+            break;
     }
     
     mainContent.innerHTML = content;
@@ -37,4 +56,16 @@ function modificarContenido() {
 function modificarContenido() {
     const contenido = document.getElementById('contenido');
     contenido.textContent = '¡Contingut modificat mitjançant JavaScript!';
+}
+
+function modificarAtributo() {
+    const imagen = document.getElementById('imagenEjemplo');
+    imagen.src = 'nueva-imagen.png';
+    imagen.alt = "Nova imatge d'exemple";
+}
+
+function modificarAtributo() {
+    const imagen = document.getElementById('imatgeExemple');
+    imagen.src = 'nueva-imagen.png';
+    imagen.alt = "Nova imatge d'exemple";
 }
