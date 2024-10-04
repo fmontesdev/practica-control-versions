@@ -18,15 +18,19 @@ function show(section) {
                     <h2>Funció per a modificar el contingut HTML mitjançant JavaScript</h2>
                     <pre><code>
 function modificarContenido() {
-    const contenido = document.getElementById('contenido');
-    contenido.textContent = '¡Contingut modificat mitjançant JavaScript!';
+    const contenido1 = document.getElementById('contenido1');
+    contenido1.textContent = '¡Contingut1 modificat mitjançant JavaScript!';
+
+    const contenido2 = document.getElementById('contenido2');
+    contenido2.textContent = '¡Contingut2 modificat mitjançant JavaScript!';
 }
                     </code></pre>
                     <p>
                         Exemple:
                         <button onclick="modificarContenido()">Modificar Contingut</button>
                     </p>
-                    <p id="contenido">Este es un exemple de contingut HTML.</p>
+                    <p id="contenido1">Este es el primer exemple de contingut HTML.</p>
+                    <p id="contenido2">Este es el segón exemple de contingut HTML.</p>
                 </section>`;
             break;
 
@@ -74,8 +78,11 @@ function modificarAtributo() {
 }
 
 function modificarContenido() {
-    const contenido = document.getElementById('contenido');
-    contenido.textContent = '¡Contingut modificat mitjançant JavaScript!';
+    const contenido1 = document.getElementById('contenido1');
+    contenido1.textContent = '¡Contingut1 modificat mitjançant JavaScript!';
+
+    const contenido2 = document.getElementById('contenido2');
+    contenido2.textContent = '¡Contingut2 modificat mitjançant JavaScript!';
 }
 
 function modificarAtributo() {
