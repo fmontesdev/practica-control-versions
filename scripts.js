@@ -29,6 +29,26 @@ function modificarContenido() {
                     <p id="contenido">Este es un exemple de contingut HTML.</p>
                 </section>`;
             break;
+
+        case 'modificarEstilos':
+            content = `
+                <section id="modificarEstilos">
+                    <h2>Funció per a modificar els estilos CSS mitjançant JavaScript</h2>
+                    <pre><code>
+function modificarEstilos() {
+    const caja = document.getElementById('cajaEstilo');
+    caja.style.backgroundColor = 'blue';
+    caja.style.color = 'white';
+    caja.style.padding = '20px';
+}
+                    </code></pre>
+                    <p>
+                        Exemple:
+                        <button onclick="modificarEstilos()">Modificar Estil</button>
+                    </p>
+                    <div id="cajaEstilo">Caixa d'estil</div>
+                </section>`;
+            break;
         
         case 'modificarAtributos':
             content = `
@@ -59,13 +79,14 @@ function modificarContenido() {
 }
 
 function modificarAtributo() {
-    const imagen = document.getElementById('imagenEjemplo');
+    const imagen = document.getElementById('imatgeExemple');
     imagen.src = 'nueva-imagen.png';
     imagen.alt = "Nova imatge d'exemple";
 }
 
-function modificarAtributo() {
-    const imagen = document.getElementById('imatgeExemple');
-    imagen.src = 'nueva-imagen.png';
-    imagen.alt = "Nova imatge d'exemple";
+function modificarEstilos() {
+    const caja = document.getElementById('cajaEstilo');
+    caja.style.backgroundColor = 'blue';
+    caja.style.color = 'white';
+    caja.style.padding = '20px';
 }
