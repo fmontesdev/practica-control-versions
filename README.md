@@ -3,16 +3,17 @@
 - [Què és Git Flow?](#què-és-git-flow)
 - [Per què hem utilitzat Git Flow al nostre projecte?](#per-què-hem-utilitzat-git-flow-al-nostre-projecte)
 - [Usuari 1](#usuari-1)
-  - [Estructura HTML](#estructura-html)
+  - [Feature Estructura HTML](#estructura-html)
 - [Usuari 2](#usuari-2)
-  - [Contingut HTML](#contingut-html)
-  - [Atributs HTML](#atributs-html)
+  - [Feature Contingut HTML](#contingut-html)
+  - [Feature Atributs HTML](#atributs-html)
 - [Usuari 3](#usuari-3)
-  - [Estils HTML](#estils-html)
+  - [Feature Estils HTML](#estils-html)
   - [Release](#release)
 - [Represa Usuari 1](#represa-usuari-1)
-  - [Millora Contingut HTML](#millora-contingut-html)
+  - [Hotfix Millora Contingut HTML](#millora-contingut-html)
   - [GitHub Pages](#github-pages)
+  - [Projecte](#projecte)
 
 
 # Introducció a Git
@@ -180,7 +181,7 @@ En resum, Git Flow ajuda a mantenir el desenvolupament de manera ordenada, oferi
 
 ![git l](img/image-74.png)
 
-El comandament git flow hotfix finish milloresV_1_0 ha realitzat correctament el merge sobre main i sobre develop per ha fallat eliminant la branca hotfix. Al git log --graph que veiem a continuació s'aprecia com apareix la branca. Amb git branch -d hotfix/milloresV_1_0 hem forçat la eliminació.
+El comandament git flow hotfix finish milloresV_1_0 ha realitzat correctament el merge sobre main i sobre develop per ha fallat eliminant la branca hotfix. Al git log --graph que veiem a continuació s'aprecia com apareix la branca. Amb git branch -d hotfix/milloresV_1_0 hem forçat la eliminació. Al últim git log podem apreciar com la branca ja no apareix.
 
 ![alt text](img/image-75.png)
 
@@ -196,9 +197,13 @@ Per un error al simular tres usuaris diferents, en aquest pas apareix als commit
 
 ## 2️⃣ __GitHub Pages__
 
+Canviarem a la branca main des d'on crearem la nova branca gh-pages.
+
 ![alt text](img/image-80.png)
 
 ![alt text](img/image-81.png)
+
+Elmininem els arxius que no nocessitem, i realitzarem un primer commit.
 
 ![alt text](img/image-82.png)
 
@@ -206,11 +211,79 @@ Per un error al simular tres usuaris diferents, en aquest pas apareix als commit
 
 ![alt text](img/image-84.png)
 
+Amb un push muntarem la nova branca al repositori remot.
+
 ![alt text](img/image-85.png)
 
-![alt text](img/image.png)
+Ja en GitHub, en settings/pages accedirem a la creació de la nostra GitHub Page asociant-la amb la branca creada (gh-pages)
 
-![alt text](image.png)
+![alt text](img/image-86.png)
+
+Modificarem el arxiu README per afegir tota la documentació requerida, i totes les imatges que necessitem.
+
+![alt text](img/image-87.png)
+
+Realitzarem un commit de totes les modificacions.
+
+![alt text](img/image-88.png)
+
+![alt text](img/image-89.png)
+
+I amb un push el muntarem al repositori remot on quedarà disponible.
+
+## 3️⃣ __Creació de projecte__
+
+Crearem un projecte de tipus "Board" amb el nom de la pràctica: Sistemes de control de versions.
+
+![alt text](img/image-90.png)
+
+Elminarem les columnes creades per defecte i afegirem una per a "features" i altra per a "hotfixs".
+
+![alt text](img/image-91.png)
+
+![alt text](img/image-92.png)
+
+![alt text](img/image-93.png)
+
+![alt text](img/image-94.png)
+
+Procedirem a agegir les issues desde el nostre repositori "practica-control-versions".
+
+![alt text](img/image-95.png)
+
+![alt text](img/image-96.png)
+
+![alt text](img/image-97.png)
+
+![alt text](img/image-98.png)
+
+![alt text](img/image-99.png)
+
+![alt text](img/image-100.png)
+
+![alt text](img/image-101.png)
+
+Al crear el projecte posteriorment a la realització del commits respectius, comentarem les issues per a que queden referenciades amb el seu commit corresponent.
+En cas de haver-lo creat inicialment, haguerem tancat les issues amb el mateix commit simplement indicant al missatge del mateix "closes #1" on el número correspon al número de la issue.
+
+![alt text](img/image-102.png)
+
+![alt text](img/image-103.png)
+
+![alt text](img/image-104.png)
+
+![alt text](img/image-105.png)
+
+![alt text](img/image-106.png)
+
+Podem veure al projecte creat com totes les issues que haviem afegit a les columnes de "Features" i "Hotfix" están completades.
+
+![alt text](img/image-107.png)
+
+Per últim, desde els settings del projecte, afegim com a colaborador al usuari antoni-gimenez.
+
+![alt text](img/image-108.png)
+
 
 Pràctica: Sistemes de Control de Versions.  
 Assignatura: Desplegament d'apliacións WEB.  
