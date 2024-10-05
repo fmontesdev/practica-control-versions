@@ -2,18 +2,18 @@
 - [Introducció a Git](#introducció-a-git)
 - [Què és Git Flow?](#què-és-git-flow)
 - [Per què hem utilitzat Git Flow al nostre projecte?](#per-què-hem-utilitzat-git-flow-al-nostre-projecte)
-- [Usuari 1](#usuari-1)
-  - [Feature Estructura HTML](#estructura-html)
-- [Usuari 2](#usuari-2)
-  - [Feature Contingut HTML](#contingut-html)
-  - [Feature Atributs HTML](#atributs-html)
-- [Usuari 3](#usuari-3)
-  - [Feature Estils HTML](#estils-html)
+- [Accions usuari 1](#accions-usuari-1)
+  - [Feature Estructura HTML](#feature-estructura-html)
+- [Accions usuari 2](#accions-usuari-2)
+  - [Feature Contingut HTML](#feature-contingut-html)
+  - [Feature Atributs HTML](#feature-atributs-html)
+- [Accions usuari 3](#accions-usuari-3)
+  - [Feature Estils CSS](#feature-estils-css)
   - [Release](#release)
-- [Represa Usuari 1](#represa-usuari-1)
-  - [Hotfix Millora Contingut HTML](#millora-contingut-html)
+- [Represa accions usuari 1](#represa-accions-usuari-1)
+  - [Hotfix Millora Contingut HTML](#hotfix-millora-contingut-html)
   - [GitHub Pages](#github-pages)
-  - [Projecte](#projecte)
+  - [Creació de projecte](#creació-de-projecte)
 
 
 # Introducció a Git
@@ -41,21 +41,33 @@ La metodologia Git Flow ofereix molts avantatges per als equips de desenvolupame
 
 En resum, Git Flow ajuda a mantenir el desenvolupament de manera ordenada, oferint un marc clar i eficient per al treball col·laboratiu i la gestió de versions. Utilitzar Git Flow és una bona pràctica per assegurar-se que el codi es desenvolupa de manera estructurada i que cada versió llançada compleix amb els estàndards de qualitat del projecte.
 
-# Usuari 1
+# Accions usuari 1
 
-## 1️⃣ __Estructura HTML__
+## __Feature Estructura HTML__
+
+Amb l'usuari 1, creem el repositori "practica-control-versions" al GitHub de fmontesdev.
 
 ![alt text](img/image-17.png)
 
+Clonem el repositori a local.
+
 ![alt text](img/image-3.png)
+
+Iniciem el repositori per a poder executar els comandaments de git flow. Ens creará automáticament la branca main i develop.
 
 ![alt text](img/image-18.png)
 
 ![alt text](img/image-6.png)
 
+Iniciem la primera feature "Estructura HTML". Ens creará una branca amb el mateix nom.
+
 ![alt text](img/image-7.png)
 
+Realitzem les modificacions corresponents.
+
 ![alt text](img/image-19.png)
+
+I executem el commit.
 
 ![alt text](img/image-9.png)
 
@@ -63,25 +75,41 @@ En resum, Git Flow ajuda a mantenir el desenvolupament de manera ordenada, oferi
 
 ![alt text](img/image-11.png)
 
+Ara procedirem a integrar la branca de feature creada amb la branca develop.
+
 ![alt text](img/image-12.png)
+
+I amb un push muntarem els canvis a la branca develop en el repositori remot.
 
 ![alt text](img/image-20.png)
 
 ![alt text](img/image-21.png)
 
-# Usuari 2
+# Accions usuari 2
 
-## 1️⃣ __Contingut HTML__
+## __Feature Contingut HTML__
+
+L'usuari 2 també clonara en local el respositori creat.
 
 ![alt text](img/image-24.png)
 
+Canviarem de branca cap a develop
+
 ![alt text](img/image-25.png)
+
+I iniciatitzarem el repositori per treballar amb git flow.
 
 ![alt text](img/image-27.png)
 
+Crearem la nova branca feature "Contingut HTML".
+
 ![alt text](img/image-28.png)
 
+Modificarem els arxius corresponents.
+
 ![alt text](img/image-29.png)
+
+I realitzarem el commit.
 
 ![alt text](img/image-30.png)
 
@@ -89,17 +117,27 @@ En resum, Git Flow ajuda a mantenir el desenvolupament de manera ordenada, oferi
 
 ![alt text](img/image-32.png)
 
+Una vegada realitzada la feature, la integrarem a la branca develop.
+
 ![alt text](img/image-33.png)
+
+I amb un push muntarem els canvis a la branca develop del repositori remot.
 
 ![alt text](img/image-34.png)
 
 ![alt text](img/image-35.png)
 
-## 2️⃣ __Atributs HTML__
+## __Feature Atributs HTML__
+
+El mateix usuari 2 tornara a obrir altra branca feature anomenada "Atributs HTML".
 
 ![alt text](img/image-36.png)
 
+Realitzarem les modificacions.
+
 ![alt text](img/image-37.png)
+
+I procedirem amb el commit.
 
 ![alt text](img/image-38.png)
 
@@ -107,27 +145,45 @@ En resum, Git Flow ajuda a mantenir el desenvolupament de manera ordenada, oferi
 
 ![alt text](img/image-40.png)
 
+Per després integrar el canvis de la branca feature a la branca develop.
+
 ![alt text](img/image-41.png)
+
+I pujar-ho tot a la branca develop del respositori remot.
 
 ![alt text](img/image-42.png)
 
 ![alt text](img/image-43.png)
 
-# Usuari 3
+# Accions usuari 3
 
-## 1️⃣ __Estils HTML__
+## __Feature Estils CSS__
+
+L'usuari 3 també es clonará el repositori creat.
 
 ![alt text](img/image-23.png)
 
+Canviarem a la branca develop.
+
 ![alt text](img/image-26.png)
+
+I inicialitzarem el repositori per a poder treballar amb git flow.
 
 ![alt text](img/image-44.png)
 
+Com l'usuari 3 habia creat i iniciatlitzat el repositori abans que l'ususari 2 realitzara totes les modificacions, tenim que actualitzar la nostra branca develop, que es d'on arranquem les feature.
+
 ![alt text](img/image-46.png)
+
+I creem una nova feature "Estils CSS".
 
 ![alt text](img/image-45.png)
 
+Realitzem els canvis.
+
 ![alt text](img/image-47.png)
+
+I procedim amb el commit.
 
 ![alt text](img/image-48.png)
 
@@ -139,27 +195,38 @@ En resum, Git Flow ajuda a mantenir el desenvolupament de manera ordenada, oferi
 
 ![alt text](img/image-52.png)
 
+Integrarem la branca feature creada amb la branca develop.
+
 ![alt text](img/image-53.png)
+
+I sincronitzarem amb la branca remota.
 
 ![alt text](img/image-54.png)
 
 ![alt text](img/image-55.png)
 
-## 2️⃣ __Release__
+## __Release__
+Fins el moment, totes les modificacions que hem realitzat a través de diverses feature están recollides a la branca develop. Ens queda per tant, muntar eixos canvis definitius a la branca main. Així que l'usuari 3 creará una nova branca, esta vegada release, que iniciará desde develop i que realitzará un merge sobre les rames main i develop.
 
 ![alt text](img/image-56.png)
 
 ![alt text](img/image-59.png)
 
+Etiquetarem aquesta versió com v1.0.
+
 ![alt text](img/image-60.png)
+
+I Muntarem amb un push els canvis de la branca main al remot.
 
 ![alt text](img/image-61.png)
 
 ![alt text](img/image-63.png)
 
-# Represa Usuari 1
+# Represa accions usuari 1
 
-## 1️⃣ __Millora Contingut HTML__
+## __Hotfix Millora Contingut HTML__
+
+L'usuari 1 rependrá les seves accións realitzan un hotfix. Primerament tindrem que actualitzar tant la branca develop com main amb els últims canvis reatlitzats.
 
 ![alt text](img/image-65.png)
 
@@ -169,9 +236,15 @@ En resum, Git Flow ajuda a mantenir el desenvolupament de manera ordenada, oferi
 
 ![alt text](img/image-68.png)
 
+Desde main iniciarem un hotfix per realitzar unes millores urgents.
+
 ![alt text](img/image-69.png)
 
+Realitzarem els canvis.
+
 ![alt text](img/image-70.png)
+
+I procedirem amb el commit.
 
 ![alt text](img/image-71.png)
 
@@ -179,23 +252,40 @@ En resum, Git Flow ajuda a mantenir el desenvolupament de manera ordenada, oferi
 
 ![alt text](img/image-73.png)
 
+Després, tancant el hotfix, integrarem el canvis realitzats sobre la branca main i develop. Pero l'usuari 3 a comés el error de amb la release, sols actualitzar la rama remota main per no la develop. Així al intentar integrar el hotfix en ha generat un error. A realitzat el merge a la branca main, pero no a develop ja que no tenia els últims canvis. Tampoc ens ha eliminat la branca hotfix.
+
 ![git l](img/image-74.png)
 
-El comandament git flow hotfix finish milloresV_1_0 ha realitzat correctament el merge sobre main i sobre develop per ha fallat eliminant la branca hotfix. Al git log --graph que veiem a continuació s'aprecia com apareix la branca. Amb git branch -d hotfix/milloresV_1_0 hem forçat la eliminació. Al últim git log podem apreciar com la branca ja no apareix.
+Realitzem el push a la branca remota main.
 
 ![alt text](img/image-75.png)
 
 ![alt text](img/image-76.png)
 
+Canviem de branca cap a develop.
+
 ![alt text](img/image-77.png)
 
+Descarreguem els ultims canvis que ens falten a la branca develop. 
+
 ![alt text](img/image-78.png)
+
+I manualment realitzarem un merge cap a develop desde la branca hotfix/milloresV_1_0:  
+- git merge hotfix/milloresV_1_0  
+
+Amb açò integrarem els últims canvis a develop. Ens quedará eliminar la branca hotfix/milloresV_1_0 manualment:  
+- git branch -d hotfix/milloresV_1_0
+
+L'ultim pas per reparar la errada será realitzar un push desde develop a la respectiva branca remota:
+- git push
+
+Al git log --graph podem apreciar com ja tenim ubicades a l'ultim commit totes les branques locals i remotes.
 
 Per un error al simular tres usuaris diferents, en aquest pas apareix als commits l'usuari 3, pero realment s'han fet amb l'usuari 1. Es pot veure al nom de la carpeta del respositori que es practica-control-versions i no practica-control-versions3. Ho hem corregit a la configuració.
 
 ![alt text](img/image-79.png)
 
-## 2️⃣ __GitHub Pages__
+## __GitHub Pages__
 
 Canviarem a la branca main des d'on crearem la nova branca gh-pages.
 
@@ -231,7 +321,7 @@ Realitzarem un commit de totes les modificacions.
 
 I amb un push el muntarem al repositori remot on quedarà disponible.
 
-## 3️⃣ __Creació de projecte__
+## __Creació de projecte__
 
 Crearem un projecte de tipus "Board" amb el nom de la pràctica: Sistemes de control de versions.
 
